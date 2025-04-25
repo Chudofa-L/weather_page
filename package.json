@@ -18,5 +18,13 @@
     "url": "https://github.com/Chudofa-L/weather_page/issues"
   },
   "homepage": "https://github.com/Chudofa-L/weather_page#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
 }
