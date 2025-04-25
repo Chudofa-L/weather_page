@@ -11,10 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Build
-        run: |
-          mkdir dist
-          cp -R src/* dist
+        run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:

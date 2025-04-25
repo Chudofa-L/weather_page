@@ -23,6 +23,6 @@ export default defineConfig([
     ...jest.configs['flat/recommended'],
   },
   {
-    ignores: ['eslint.config.mjs']
+    ignores: ['eslint.config.mjs', 'webpack.config.js', 'babel.config.js', 'jest.config.js']
   },
 ]);
