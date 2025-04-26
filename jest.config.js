@@ -193,6 +193,10 @@ const config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+
+  moduleNameMapper: {
+    '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
+  },
 };
 
 module.exports = config;
