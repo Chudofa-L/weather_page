@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-page">
+      <div class="search-box">
+        <!--Блок поля ввода и списком истории ввода-->
+        <input
+          id="search-btn"
+          autocomplete="off"
+          list="city"
+          type="text"
+          placeholder="Поиск..."
+        />
+        <button class="bx bx-search"></button>
+        <datalist id="city">
+          <!--Список истории ввода-->
+          <option value="history"></option>
+        </datalist>
+      </div>
+      <div class="weather-box">
+        <!--Блок прогноза погоды-->
+        <img
+          class="city-static-map"
+          src="https://static-maps.yandex.ru/v1?lang=ru_RU&ll=32.810152,39.889847&spn=0.016457,0.00619&apikey=c1a63bde-3af7-4a2b-857a-ee2de236428b"
+          alt=""
+        />
+        <p class="temperature">0 <span>°C</span></p>
+        <div class="info-humidity">
+          <span>0%</span>
+        </div>
+        <p>Влажность</p>
+        <div class="info-wind">
+          <span>0Km/h</span>
+        </div>
+        <p>Скорость ветра</p>
+      </div>
+      <div class="not-found"><!--Блок ошибки--></div>
+    </div>
+  </body>
+</html>

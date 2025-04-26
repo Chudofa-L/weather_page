@@ -7,8 +7,8 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "prepare": "husky",
-    "dev": "webpack serve --mode=development",
-    "build": "webpack --mode=production"
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "@eslint/js": "^9.25.1",
     "@types/jest": "^29.5.14",
     "babel-jest": "^29.7.0",
+    "css-loader": "^7.1.2",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-jest": "^28.11.0",
@@ -44,6 +45,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.5.1",
     "prettier": "3.5.3",
+    "style-loader": "^4.0.0",
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
