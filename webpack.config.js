@@ -4,8 +4,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/script.js',
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -14,9 +22,10 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, 'dist'), // Каталог для статики
     },
-    compress: true,
-    port: 9000,
+    open: true, // Автоматически открывать браузер
   },
+
+  mode: 'development', // Режим сборки
 };
